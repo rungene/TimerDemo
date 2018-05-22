@@ -2,7 +2,6 @@ package com.example.robpercival.timerdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.Log;
 import android.view.Menu;
@@ -16,8 +15,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+/*
         new CountDownTimer(10000, 1000) {
+
 
             public void onTick(long millisecondsUntilDone) {
 
@@ -36,10 +36,9 @@ public class MainActivity extends Activity {
             }
         }.start();
 
-        }
+        }*/
 
 
-        /*
         final Handler handler = new Handler();
         Runnable run = new Runnable() {
             @Override
@@ -56,7 +55,6 @@ public class MainActivity extends Activity {
 
         handler.post(run);
     }
-    */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
